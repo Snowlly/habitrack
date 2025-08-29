@@ -1,16 +1,27 @@
 # habitrack
 
-A new Flutter project.
+C'est un projet qui permet un suivi quotidien de ses habitudes.
+
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Ouvrir l'app
 
-A few resources to get you started if this is your first Flutter project:
+```
+flutter run
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Une interface s'ouvre avec deux statistiques :
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+La première : le nombre total d'habitude.
+La deuxième : le nombre d'habitude effectué aujourd'hui
+
+### Les habitudes :
+
+Les habitudes seront affichés avec la possibilité de les cocher pour les valider.
+Il existe aussi un sytème de streak (séries) qui prend en compte le moment où une habitude à été cochée, si cette dernière date de la veille et qu'on re-valide notre habitude, cela pasera le streak à 2. 
+
+Exemple : Lundi (sport), Mardi (sport) -> alors le streak passe à 2.
+
+
+Il y a aussi le possibilité de supprimer une habitude en cliquant sur l'icon de la poubelle.
