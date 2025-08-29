@@ -9,6 +9,7 @@ class Habit {
         streak = 0,
         lastDone = null;
 
+
   void newDayCheck() {
     final t = DateTime.now();
     if (lastDone == null) {
@@ -19,6 +20,7 @@ class Habit {
       doneToday = false;
     }
   }
+
 
   void toggleToday() {
     final today = DateTime.now();
@@ -48,6 +50,7 @@ class Habit {
   bool _sameDate(DateTime a, DateTime b) {
     return a.year == b.year && a.month == b.month && a.day == b.day;
   }
+
 
   bool _wasYesterday(DateTime a, DateTime today) {
     final y = DateTime(today.year, today.month, today.day).subtract(const Duration(days: 1));
